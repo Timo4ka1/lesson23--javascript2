@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>lesson 23</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <h1>
+            Учу <span class="yellow">JavaScript</span> ч.2 :)
+         </h1>
+         <h6>Отработка парсеров, операторов и прочее уже в консоли</h6>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <h2 class="hw--title">
+               Домашка 1:
+            </h2>
+            <ul class="hw--list">
+               <ul class="red">
+                  <li>console.log('35' + - "22");</li>
+                  <li>Вернёт 13</li>
+                  <li class="yellow">Вернёт строку "35-22"</li>
+               </ul>
+
+               <ul class="green">
+                  <li>console.log('35' * "22");</li>
+                  <li>Вернёт 770</li>
+               </ul>
+
+               <ul class="red">
+                  <li>console.log('558' > 22++);</li>
+                  <li>Вернёт true</li>
+                  <li class="yellow">Число 23 тоже нужно взять в кавычки</li>
+               </ul>
+
+               <ul class="red">
+                  <li>let userCounter = 0;</li>
+                  <li>let newUsers = userCounter++</li>
+                  <li>console.log(newUsers);</li>
+                  <li>Вернёт 1</li>
+                  <li class="yellow">Чтоб вернуло 1, надо записать ++userCounter</li>
+               </ul>
+
+               <ul class="red">
+                  <li>console.log(!false && 11 || 18 && !'');</li>
+                  <li>Вернёт 18</li>
+                  <li class="yellow">Вернёт 11</li>
+               </ul>
+
+               <ul class="green">
+                  <li>let name = 0;</li>
+                  <li>console.log(name ?? "Без имени");</li>
+                  <li class="yellow">Вернёт 0</li>
+               </ul>
+            </ul>
+
+            <h2 class="hw--title">
+               Домашка 2:
+            </h2>
+
+            <ul class="hw--list">
+               <ul class="red">
+                  <li>if (1 === "1"){</li>
+                  <li>console.log('Истина!');</li>
+                  <li>} else {</li>
+                  <li>console.log('Ложь!');</li>
+                  <li>}</li>
+                  <li class="yellow">Число != числу в строке, т.к. у нас строгое равно "===", так что ложь</li>
+               </ul>
+
+               <ul class="green">
+                  <li>if (5 == "5") {</li>
+                  <li>console.log('Истина!')</li>;
+                  <li>} else {</li>
+                  <li>console.log('Ложь!')</li>
+                  <li>}</li>
+                  <li class="yellow">Равно не строгое "==", так что истина.</li>
+               </ul>
+
+               <ul class="red">
+                  <li>let message = (92 > '11' && 58 < 100) ? 'Истина' . 'Ложь!' ; </li>
+                  <li>console.log(message);</li>
+               </ul>
+
+               <ul class="green">
+                  <li>if (0) {</li>
+                  <li>console.log('Ложь!');</li>
+                  <li>} else if (" ") {</li>
+                  <li>console.log ('Истина!')</li>
+                  <li>}</li>
+               </ul>
+            </ul>
+
+            <h2 class="hw--title">
+               Домашка 3:
+            </h2>
+
+            <ul class="hw--list">
+               <ul class="green">
+                  <li>let i;</li>
+                  <li>for (let i = 1; i <= 5; i++) {</li>
+                  <li>console.log(i)</li>
+                  <li>}</li>
+               </ul>
+
+               <ul class="red">
+                  <li>num = 8;</li>
+                  <li>while (num) {</li>
+                  <li>console.log(num);</li>
+                  <li>num--</li>
+                  <li>}</li>
+                  <li class="yellow">Последнее число в консоли не 0, а 1</li>
+               </ul>
+
+               <ul class="green">
+                  <li>console.log('');</li>
+                  <li>firstFor: for (let num = 0; num < 2; num++) {</li>
+                  <li>for (let size = 0; size < 3; size++) { </li>
+                  <li>if (size == 1) break firstFor;</li>
+                  <li>console.log(size)</li>
+                  <li>}</li>
+                  <li>}</li>
+                  <li class="yellow">Прервал работу первого цикла. В консоль вывелся 0.</li>
+               </ul>
+            </ul>
+
+            <h2 class="hw--title">
+               Домашка 4:
+            </h2>
+
+            <ul class="hw--list">
+               <ul class="green">
+                  <li>numOne = Math.ceil(1.005 * 100) / 100;</li>
+                  <li>console.log(numOne);</li>
+                  <li class="yellow">Использовал Math.ceil, чтоб округлить до сотых</li>
+               </ul>
+
+               <ul class="green">
+                  <li>let value = "135.58px";</li>
+                  <li>console.log(parseFloat(value));</li>
+                  <li>console.log(typeof parseFloat(value));</li>
+               </ul>
+
+               <ul class="black">
+                  <li>value = 58 + `Фрилансер`;</li>
+                  <li>if (isNaN(value)) {</li>
+                  <li>console.log('Результат выражения NaN')</li>
+                  <li>}</li>
+                  <li class="yellow">В консоль выводится нужный текст, но я не уверен, что сделал всё как надо</li>
+               </ul>
+
+               <ul class="green">
+                  <li>console.log(Math.max(10, 58, 39, -150, 0))</li>
+               </ul>
+
+               <ul class="green">console.log(Math.floor(58.858))</ul>
+            </ul>
+
+            <h2 class="hw--title">
+               Домашка 5:
+            </h2>
+            <ul class="hw--list">
+               <ul class="green">
+                  <li>let fls = 'фрилансер';</li>
+                  <li>let text = `Привет! Я ${fls}`</li>
+                  <li>console.log(text)</li>
+                  <li class="yellow">В "text" должны быть кавычки ``, чтоб работать с переменными</li>
+               </ul>
+
+               <ul class="green">
+                  <li>text = 'фрилансер'</li>
+                  <li>console.log(text[5]);</li>
+               </ul>
+
+               <ul class="red">
+                  <li>text = 123 + '456';</li>
+                  <li>console.log(text)</li>
+                  <li class="yellow">Правильно:</lic>
+                  <li class="green">text = 123 + +'456';</li>
+                  <li class="green">console.log(text);</li>
+                  <li class="yellow">Или</li>
+                  <li class="green">text = 123 + Number('456');</li>
+                  <li class="green">console.log(text);</li>
+               </ul>
+
+               <ul class="green">
+                  <li>text = "фрилансер"</li>
+                  <li>console.log(text.toUpperCase());</li>
+               </ul>
+
+               <ul class="green">
+                  <li>text = 'фрилансер';</li>
+                  <li>console.log(text.slice(3, 6));</li>
+               </ul>
+
+               <ul class="green">
+                  <li>text = 'фриалансер';</li>
+                  <li>console.log(text.includes('лан', 4));</li>
+                  <li class="yellow">Вернёт true</li>
+               </ul>
+            </ul>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>
